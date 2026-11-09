@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Акценат теме (Подразумевано)",
     "BtnStyleThemeInverted": "Инвертована тема",
     "BtnStyleWhiteAccent": "Бело и Акценат",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Додај",
     "ButtonApply": "Примени",
     "ButtonBackUp": "Направи резервну копију сада",

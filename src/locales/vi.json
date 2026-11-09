@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Màu nhấn Chủ đề (Mặc định)",
     "BtnStyleThemeInverted": "Chủ đề đảo ngược",
     "BtnStyleWhiteAccent": "Trắng & Màu nhấn",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Thêm",
     "ButtonApply": "Áp dụng",
     "ButtonBackUp": "Sao lưu ngay",

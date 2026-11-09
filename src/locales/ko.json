@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "테마 강조색 (기본값)",
     "BtnStyleThemeInverted": "테마 반전",
     "BtnStyleWhiteAccent": "흰색 및 강조색",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "추가하다",
     "ButtonApply": "적용",
     "ButtonBackUp": "지금 백업",

@@ -512,6 +512,26 @@ const DEFAULTS = {
     html5MaxMaxBufferLength: 120,
     html5SegmentLength: 2,
 
+    /*
+     * Target Playback Buffer Size (seconds)
+     * -------------------------------------------------------------------------
+     * Unlike the HTML5-only settings above, this governs the forward buffer
+     * target for BOTH playback paths:
+     *   - HLS (_playWithHlsJs): used as the basis for hls.js maxBufferLength /
+     *     maxMaxBufferLength when html5MaxBufferLength/html5MaxMaxBufferLength
+     *     have not been explicitly customized.
+     *   - DirectPlay (WebOSPlayer._playNativeDirect): gates playback start
+     *     until this many seconds are buffered ahead (or a timeout elapses),
+     *     and drives a client-side Range-prefetch loop that warms the
+     *     server/mount cache ahead of the playhead.
+     *
+     * Setting this to 0 fully disables the DirectPlay gate/prefetch and
+     * restores the pre-existing HLS buffer defaults (30s / 60s).
+     *
+     * Default: 30.
+     */
+    bufferSeconds: 30,
+
     // =========================================================================
     // PLAYBACK SETTINGS
     // =========================================================================
@@ -939,6 +959,19 @@ export const PlayerSettings = {
         }
 
         return stored;
+    },
+
+    /**
+     * Check whether a setting has been explicitly stored by the user, as
+     * opposed to currently resolving to its default value. Used where an
+     * explicit user choice must take precedence over a derived default
+     * (e.g. html5MaxBufferLength vs. the bufferSeconds-derived default).
+     * @param {string} key - Setting key from DEFAULTS
+     * @returns {boolean}
+     */
+    has(key) {
+        if (!(key in DEFAULTS)) return false;
+        return storage.getItem(STORAGE_PREFIX + key) !== null;
     },
 
     /**

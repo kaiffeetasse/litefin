@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "主題強調色（預設）",
     "BtnStyleThemeInverted": "主題反轉",
     "BtnStyleWhiteAccent": "白色與強調色",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "新增",
     "ButtonApply": "套用",
     "ButtonBackUp": "立即備份",

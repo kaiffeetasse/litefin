@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Theme Accent (Default)",
     "BtnStyleThemeInverted": "Theme Inverted",
     "BtnStyleWhiteAccent": "White & Accent",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Add",
     "ButtonApply": "Apply",
     "ButtonBackUp": "Back Up Now",

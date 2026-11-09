@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Themenakzent (Standard)",
     "BtnStyleThemeInverted": "Thema invertiert",
     "BtnStyleWhiteAccent": "Weiß & Akzent",
+    "BufferSize": "Pufferzeit",
+    "BufferSizeDescription": "Ziel-Puffergröße in Sekunden. Wirkt sowohl auf DirectPlay (clientseitiges Vorladen) als auch auf die HLS-Wiedergabe.",
     "ButtonAdd": "Hinzufügen",
     "ButtonApply": "Anwenden",
     "ButtonBackUp": "Jetzt sichern",

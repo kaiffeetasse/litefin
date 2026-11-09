@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Tema Accent (Standard)",
     "BtnStyleThemeInverted": "Tema Inverterad",
     "BtnStyleWhiteAccent": "Vit & Accent",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Tillägga",
     "ButtonApply": "Verkställ",
     "ButtonBackUp": "Säkerhetskopiera nu",

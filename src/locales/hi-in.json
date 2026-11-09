@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "थीम एक्सेंट (डिफ़ॉल्ट)",
     "BtnStyleThemeInverted": "थीम इनवर्टेड",
     "BtnStyleWhiteAccent": "व्हाइट और एक्सेंट",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "जोड़ें",
     "ButtonApply": "लागू करें",
     "ButtonBackUp": "अभी बैकअप लें",

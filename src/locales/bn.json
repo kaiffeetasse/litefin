@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "থিম অ্যাকসেন্ট (ডিফল্ট)",
     "BtnStyleThemeInverted": "থিম ইনভার্টেড",
     "BtnStyleWhiteAccent": "হোয়াইট এবং অ্যাকসেন্ট",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "যোগ করুন",
     "ButtonApply": "প্রয়োগ করুন",
     "ButtonBackUp": "এখন ব্যাক আপ",

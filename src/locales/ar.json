@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "اللون المميز للثيم (افتراضي)",
     "BtnStyleThemeInverted": "معكوس الثيم",
     "BtnStyleWhiteAccent": "أبيض واللون المميز",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "إضافة",
     "ButtonApply": "تطبيق",
     "ButtonBackUp": "نسخ احتياطي",

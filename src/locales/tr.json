@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Tema Vurgusu (Varsayılan)",
     "BtnStyleThemeInverted": "Tema Ters Çevrilmiş",
     "BtnStyleWhiteAccent": "Beyaz ve Vurgu",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Ekle",
     "ButtonApply": "Uygula",
     "ButtonBackUp": "Şimdi Yedekle",

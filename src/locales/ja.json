@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "テーマアクセント (デフォルト)",
     "BtnStyleThemeInverted": "テーマ反転",
     "BtnStyleWhiteAccent": "ホワイト＆アクセント",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "追加",
     "ButtonApply": "適用",
     "ButtonBackUp": "今すぐバックアップ",

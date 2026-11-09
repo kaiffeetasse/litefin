@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Accentul temei (implicit)",
     "BtnStyleThemeInverted": "Tema inversată",
     "BtnStyleWhiteAccent": "Alb și Accent",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Adăuga",
     "ButtonApply": "Aplică",
     "ButtonBackUp": "Faceți backup acum",

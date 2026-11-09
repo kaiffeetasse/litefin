@@ -547,6 +547,8 @@
     "BtnStyleThemeDefault": "Акцент темы (По умолчанию)",
     "BtnStyleThemeInverted": "Инверсия темы",
     "BtnStyleWhiteAccent": "Белый и Акцентный",
+    "BufferSize": "Buffer Size",
+    "BufferSizeDescription": "Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.",
     "ButtonAdd": "Добавлять",
     "ButtonApply": "Применить",
     "ButtonBackUp": "Резервное копирование сейчас",

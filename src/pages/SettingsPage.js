@@ -4601,6 +4601,27 @@ class SettingsPage extends Page {
                     <h3 class="setting-section-title" data-i18n="PlaybackBuffering">${i18n.t('PlaybackBuffering') || 'Playback Buffering'}</h3>
                         <div class="setting-item">
                             <div class="setting-label">
+                                <span class="setting-name" data-i18n="BufferSize">${i18n.t('BufferSize') || 'Buffer Size'}</span>
+                                <span class="setting-description" data-i18n="BufferSizeDescription">${i18n.t('BufferSizeDescription') || 'Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.'}</span>
+                            </div>
+                            <div class="setting-control">
+                                ${this._renderDropdown(
+                        'buffer-size-select',
+                        [
+                            { value: 10, label: i18n.t('Seconds', [10]) || '10s' },
+                            { value: 20, label: i18n.t('Seconds', [20]) || '20s' },
+                            { value: 30, label: i18n.t('Seconds', [30]) || '30s' },
+                            { value: 45, label: i18n.t('Seconds', [45]) || '45s' },
+                            { value: 60, label: i18n.t('Seconds', [60]) || '60s' },
+                            { value: 90, label: i18n.t('Seconds', [90]) || '90s' },
+                            { value: 120, label: i18n.t('Seconds', [120]) || '120s' }
+                        ],
+                        PlayerSettings.get('bufferSeconds') || 30
+                    )}
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-label">
                                 <span class="setting-name" data-i18n="WebosBufferGate">${i18n.t('WebosBufferGate') || 'Buffer Gate'}</span>
                                 <span class="setting-description" data-i18n="WebosBufferGateDesc">${i18n.t('WebosBufferGateDesc') || 'Threshold in seconds for micro-stall recovery.'}</span>
                             </div>
@@ -4756,6 +4777,27 @@ class SettingsPage extends Page {
                 ) {
                     html += `
                     <h3 class="setting-section-title" data-i18n="PlaybackBuffering">${i18n.t('PlaybackBuffering') || 'Playback Buffering'}</h3>
+                        <div class="setting-item">
+                            <div class="setting-label">
+                                <span class="setting-name" data-i18n="BufferSize">${i18n.t('BufferSize') || 'Buffer Size'}</span>
+                                <span class="setting-description" data-i18n="BufferSizeDescription">${i18n.t('BufferSizeDescription') || 'Target forward buffer size in seconds. Applies to DirectPlay (client-side pre-fetch) and HLS playback.'}</span>
+                            </div>
+                            <div class="setting-control">
+                                ${this._renderDropdown(
+                        'buffer-size-select',
+                        [
+                            { value: 10, label: i18n.t('Seconds', [10]) || '10s' },
+                            { value: 20, label: i18n.t('Seconds', [20]) || '20s' },
+                            { value: 30, label: i18n.t('Seconds', [30]) || '30s' },
+                            { value: 45, label: i18n.t('Seconds', [45]) || '45s' },
+                            { value: 60, label: i18n.t('Seconds', [60]) || '60s' },
+                            { value: 90, label: i18n.t('Seconds', [90]) || '90s' },
+                            { value: 120, label: i18n.t('Seconds', [120]) || '120s' }
+                        ],
+                        PlayerSettings.get('bufferSeconds') || 30
+                    )}
+                            </div>
+                        </div>
                         <div class="setting-item">
                             <div class="setting-label">
                                 <span class="setting-name" data-i18n="Html5MaxBufferLength">${i18n.t('Html5MaxBufferLength') || 'Max Buffer Length'}</span>
@@ -11780,6 +11822,8 @@ class SettingsPage extends Page {
             'segment-action-recap-select': { type: 'player', key: 'skipActionRecap' },
             'segment-action-preview-select': { type: 'player', key: 'skipActionPreview' },
 
+            'buffer-size-select': { type: 'player', key: 'bufferSeconds' },
+
             'webos-buffer-gate-select': { type: 'player', key: 'webosBufferGate' },
             'webos-stall-recovery-select': { type: 'player', key: 'webosStallRecovery' },
             'webos-segment-length-select': { type: 'player', key: 'webosSegmentLength' },
@@ -12209,6 +12253,7 @@ class SettingsPage extends Page {
                                 'html5MaxBufferLength',
                                 'html5MaxMaxBufferLength',
                                 'html5SegmentLength',
+                                'bufferSeconds',
                                 'playQueueEpisodeLimit'
                             ];
 
